@@ -1,8 +1,6 @@
 # RANZCR-CLiP
 <img src="figure/titlefigure.png">
-Kaggle diary for RANZCR CLiP competition
-
-Kaggle diary for RANZCR CLiP - Catheter and Line Position Challenge
+Kaggle diary for RANZCR CLiP - Catheter and Line Position Challenge competition
 
 このリポジトリはRANZCR CLiPコンペのKaggle日記です。
 
@@ -29,23 +27,28 @@ Description(DeepL)
 ## team
 solo(team mergeしたことない...)
 ## timeline
-2/24　joined<br>
-3/16  close
+2/24 joined<br>
+3/16 close
 ## 目標
-金　上位11<br>
-銀　上位50<br>
-銅　上位100
+金　上位?<br>
+銀　上位?<br>
+銅　上位?
 
 銅メダルをとってexpertになりたいが、今後のこと(masterになる)も考えると銀メダルを取りたいという。
 
 ### 2/24
 ***
 公開カーネルを提出(0.965)
-resnext50_32x4dとefficientnet_b4で学習を回した。(本当はtf_efficientnet_b4で学習するつもりだった...)ROCスコアは、resnext50_32x4dが94%ほどで、中々悪くない結果であったが、リーダーボードを見る感じ、もっと高いスコアが必要そう。(というか公開カーネルがあるとはいえ、LB団子になりすぎじゃね？)
+resnext50_32x4dとefficientnet_b4で学習を回した(本当はtf_efficientnet_b4で学習するつもりだった...)。ROCスコアは、resnext50_32x4dが94%ほどで、中々悪くない結果であったが、リーダーボードを見る感じ、もっと高いスコアが必要そう。(というか公開カーネルがあるとはいえ、LB団子になりすぎじゃね？)
 
 一方でefficientnetは、84%と、そこまで良いスコアだと言えなかった。
 
 さらに、画像サイズを600として学習したため、学習時間が長かった(どちらもepoch10までたどり着かなかった)
+
+コードは大体自分で書いたが、
+<a href="lhttps://www.kaggle.com/yasufuminakama/ranzcr-resnext50-32x4d-starter-training">Y.Nakamaさんの公開notebook</a>
+を参考にさせていただいた部分も多い。loss関数として、BCEwithlogitlossを使用した。
+
 
 <a href="log/ranzcr-training-resnext.log">resnext50_32x4dのログ</a><br>
 <a href="log/ranzcr-training-efficientnet.log">efficientnet_b4のログ</a><br>
