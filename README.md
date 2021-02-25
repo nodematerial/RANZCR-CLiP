@@ -49,7 +49,10 @@ resnext50_32x4dとefficientnet_b4で学習を回した。(本当はtf_efficientn
 
 <a href="log/ranzcr-training-resnext.log">resnext50_32x4dのログ</a><br>
 <a href="log/ranzcr-training-efficientnet.log">efficientnet_b4のログ</a><br>
+
 ### 2/25
 ***
+最近kaggle界隈で話題となっているNFnetを使ってみた。timmに実装されていたnfnet_f1というモデルを使用した。<br>
+速くもGPU quotaがピンチ
 
 
