@@ -46,7 +46,7 @@ resnext50_32x4dとefficientnet_b4で学習を回した(本当はtf_efficientnet_
 さらに、画像サイズを600として学習したため、学習時間が長かった(どちらもepoch10までたどり着かなかった)
 
 コードは大体自分で書いたが、
-<a href="lhttps://www.kaggle.com/yasufuminakama/ranzcr-resnext50-32x4d-starter-training">Y.Nakamaさんの公開notebook</a>
+<a href="https://www.kaggle.com/yasufuminakama/ranzcr-resnext50-32x4d-starter-training">Y.Nakamaさんの公開notebook</a>
 を参考にさせていただいた部分も多い。loss関数として、BCEwithlogitlossを使用した。
 
 
