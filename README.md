@@ -42,7 +42,9 @@ solo(team mergeしたことない...)
 ***
 公開カーネルを提出(0.965)
 resnext50_32x4dとefficientnet_b4で学習を回した。(本当はtf_efficientnet_b4で学習するつもりだった...)ROCスコアは、resnext50_32x4dが94%ほどで、中々悪くない結果であったが、リーダーボードを見る感じ、もっと高いスコアが必要そう。(というか公開カーネルがあるとはいえ、LB団子になりすぎじゃね？)
+
 一方でefficientnetは、84%と、そこまで良いスコアだと言えなかった。
+
 さらに、画像サイズを600として学習したため、学習時間が長かった(どちらもepoch10までたどり着かなかった)
 
 <a href="log/ranzcr-training-resnext.log">resnext50_32x4dのログ</a><br>
